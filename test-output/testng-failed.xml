@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.EEProject.Listeners"/>
+  </listeners>
+  <test name="Validating navigation bar(failed)">
+    <classes>
+      <class name="Academy.EEProject.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+          <include name="validateAppNavBar"/>
+        </methods>
+      </class> <!-- Academy.EEProject.validateNavigationBar -->
+      <class name="Academy.EEProject.HomePage">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.HomePage -->
+      <class name="Academy.EEProject.validateTitle">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.validateTitle -->
+    </classes>
+  </test> <!-- Validating navigation bar(failed) -->
+  <test name="Validating user login(failed)">
+    <classes>
+      <class name="Academy.EEProject.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.validateNavigationBar -->
+      <class name="Academy.EEProject.HomePage">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.HomePage -->
+      <class name="Academy.EEProject.validateTitle">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.validateTitle -->
+    </classes>
+  </test> <!-- Validating user login(failed) -->
+  <test name="Validating title in the page(failed)">
+    <classes>
+      <class name="Academy.EEProject.validateNavigationBar">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.validateNavigationBar -->
+      <class name="Academy.EEProject.HomePage">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.HomePage -->
+      <class name="Academy.EEProject.validateTitle">
+        <methods>
+          <include name="validateAppTitle"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Academy.EEProject.validateTitle -->
+    </classes>
+  </test> <!-- Validating title in the page(failed) -->
+</suite> <!-- Failed suite [Suite] -->
